@@ -654,7 +654,7 @@ Instructions :
 
 Réponds UNIQUEMENT avec le JSON, aucun texte avant ou après.`;
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("https://corsproxy.io/?https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -692,7 +692,7 @@ L'email doit :
 
 Réponds en JSON strict : {"subject": "...", "body": "..."}`;
 
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("https://corsproxy.io/?https://api.anthropic.com/v1/messages", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
